@@ -118,11 +118,10 @@ button:hover {
   padding: 0 2em 2em;
 }
 .participant {
-  background: #243748;
   padding: 10px;
-  border-radius: 6px;
   display: inline-block;
-  margin-right: 10px;
+  margin-top: -10vh;
+  margin-left: -50vw;
 }
 .participant:last-child {
   margin-right: 0;
