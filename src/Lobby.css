@@ -1,0 +1,111 @@
+h1.lobby-header {
+  position: absolute;
+  height: 40vh;
+  width: 50vw;
+  left: 10vw;
+  top: 30vh;
+  font-weight: 700;
+  text-align: left;
+}
+
+.lobby-form {
+  margin-left: 60vw;
+  margin-top: 30vh;
+}
+
+input.form-input {
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 25px;
+}
+
+input.form-input-2 {
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 25px;
+}
+
+.form-btn {
+  margin-top: 2vh;
+  margin-left: 6vw;
+  background: #243748;
+  color: #fff;
+  border-radius: 25px;
+  width: 150px;
+  transition: 0.2s ease-in;
+}
+.form-btn:hover {
+  border: 1px solid #fff;
+}
+
+
+div.logo{
+  background-image: linear-gradient(white, skyblue);
+}
+div.logo::after{
+content:"";
+position:absolute;
+z-index:100;
+display:block;
+opacity:0.3;
+z-index:-1;
+width:100%;
+height:100%;
+background: linear-gradient(90deg, rgba(255, 0, 0, 0.5) 14.29%, rgba(0, 0, 0, 0) 14.29%, rgba(0, 0, 0, 0) 50%, rgba(255, 0, 0, 0.5) 50%, rgba(255, 0, 0, 0.5) 64.29%, rgba(0, 0, 0, 0) 64.29%, rgba(0, 0, 0, 0) 100%);
+  background-size: 20px 20px;
+}
+#hologram {
+  text-decoration: none;
+}
+
+@keyframes fluid {
+from {
+  background-position: top;
+  opacity: 1;
+}
+
+to {
+  background-position: bottom;
+  opacity: 0.8;
+}
+}
+#hologram > #lobby-hologram {
+  position: absolute;
+  top: -40vh;
+left: -5vw;
+  width: fit-content;
+  padding: 0 50px;
+  display:block;
+line-height: 1;
+font-weight: 900;
+font-size: 84px;
+font-family: 'Corbel', sans-serif;
+text-align: left;
+background-image: url(https://img.freepik.com/free-photo/_40163-61.jpg?size=626&ext=jpg);
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+-webkit-text-fill-color: transparent;
+animation-duration: 30s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+  animation-timing-function: linear;
+animation-name: fluid;
+background-size: 500%;
+color: black;
+}
+#color2 #lobby-hologram{
+  background-size: 400%;
+  border-color: #52bbccbf;
+}
+#color3 #lobby-hologram{
+  background-size: 200%;
+  border-color: #fff8b9;
+}
+#hologram #lobby-hologram:before{
+  text-shadow: 4px 2px 1px #40adff, 2px 2px 10px #f4b0e7;
+
+  position: absolute;
+  display: inline;
+  z-index: -10;
+}

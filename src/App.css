@@ -6,25 +6,35 @@
 
 html {
   height: 100%;
+
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Corbel', sans-serif;
   color: #fff;
   min-height: 100%;
+overflow: hidden;
 }
 
 header {
-  background:  radial-gradient(circle, #243748 0%, #4b749f 100%);
+position: absolute;
   color: #fff;
   text-align: center;
   flex-grow: 0;
   padding-bottom: 1em;
 }
 
-h1 {
-  font-weight: 300;
-  padding: 0.4em 0;
+header > h1 {
+  position: absolute;
+  font-family: 'Ammonite';
+  left: 5vw;
+}
+
+header > h3 {
+  position: absolute;
+  left: 85vw;
+  top: 3vh;
+  width: 130px;
 }
 
 #root {
@@ -39,7 +49,7 @@ h1 {
 
 main {
   padding-top: 2em;
-  background:#fff;
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
   flex-grow: 1;
 }
 
@@ -132,7 +142,9 @@ video {
 }
 
 footer {
-  background: radial-gradient(circle, #243748 0%, #4b749f 100%);
+position: absolute;
+top: 95vh;
+left: 45vw;
   color: #fff;
   text-align: center;
   flex-grow: 0;
@@ -141,4 +153,78 @@ footer {
 
 footer a {
   color: #fff;
+}
+
+div.logo{
+  background-image: linear-gradient(white, skyblue);
+}
+div.logo::after{
+content:"";
+position:absolute;
+z-index:100;
+display:block;
+opacity:0.3;
+
+
+z-index:-1;
+width:100%;
+height:100%;
+background: linear-gradient(90deg, rgba(255, 0, 0, 0.5) 14.29%, rgba(0, 0, 0, 0) 14.29%, rgba(0, 0, 0, 0) 50%, rgba(255, 0, 0, 0.5) 50%, rgba(255, 0, 0, 0.5) 64.29%, rgba(0, 0, 0, 0) 64.29%, rgba(0, 0, 0, 0) 100%);
+  background-size: 20px 20px;
+}
+#hologram {
+  text-decoration: none;
+}
+
+@keyframes fluid {
+from {
+  background-position: top;
+  opacity: 1;
+}
+
+to {
+  background-position: bottom;
+  opacity: 0.8;
+}
+}
+#hologram > h1{
+  position: absolute;
+  top: -30vh;
+line-height: 0.65;
+letter-spacing: -4px;
+  width: fit-content;
+  padding: 0 50px;
+  display:block;
+  margin:15vw auto;
+  font-weight: normal;
+font-size: 32px;
+font-family: 'Ammonite';
+text-align: center;
+background-image: url(https://img.freepik.com/free-photo/_40163-61.jpg?size=626&ext=jpg);
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+-webkit-text-fill-color: transparent;
+animation-duration: 20s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+  animation-timing-function: linear;
+animation-name: fluid;
+background-size: 500%;
+color: black;
+}
+#color2 h1{
+  background-size: 400%;
+  border-color: #52bbccbf;
+}
+#color3 h1{
+  background-size: 200%;
+  border-color: #fff8b9;
+}
+#hologram h1:before{
+  text-shadow: 4px 2px 1px #40adff, 2px 2px 10px #f4b0e7;
+
+  position: absolute;
+  display: inline;
+  z-index: -10;
 }

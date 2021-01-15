@@ -1,0 +1,63 @@
+
+.room {
+  position: relative;
+  background: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+.logout-btn {
+  position: absolute;
+  top: -1vh;
+  left: 85vw;
+  right: 20px;
+  width: 150px;
+  height: 40px;
+  border-radius: 25px;
+  background: #243748;
+  font-size: 16px;
+  color: #fff;
+  border: 1px solid transparent;
+}
+h2.room-header {
+  text-align: center;
+  font-weight: 300;
+  margin-top: 1vh;
+  margin-left: 50vw;
+}
+.room > h3 {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 1em;
+}
+
+
+.local-participant {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.remote-participants {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 0 2em 2em;
+}
+.participant {
+  height: 400px;
+  border-radius: 150px;
+  display: inline-block;
+
+}
+.participant:last-child {
+  margin-right: 0;
+}
+.participant h3 {
+  text-align: center;
+  padding-bottom: 0.5em;
+  color: #fff;
+}
+
+video {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+}

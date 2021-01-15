@@ -6,8 +6,25 @@ const App = () => {
   return (
     <div className="app">
       <header>
-        <h1>LUNA WEB SOLUTIONS</h1>
-        <h3>VideoChat</h3>
+      <div className="logo">
+            {' '}
+            <div id="hologram" className='color1'>
+              <h1>luna<br/>
+              {' '}web<br/>
+              {' '}dev<br/></h1>
+            </div>
+            <div id="hologram" className='color2'>
+              <h1>luna<br/>
+              web <br/>
+              dev <br/></h1>
+            </div>
+            <div id="hologram" className='color3'>
+              <h1>luna<br/>
+              web <br/>
+              dev <br/></h1>
+            </div>
+          </div >
+        <h3>Video-Chat Demo</h3>
       </header>
       <main>
         <VideoChat />

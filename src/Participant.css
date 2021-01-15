@@ -1,0 +1,8 @@
+
+video {
+  clip-path: circle(200px);
+  margin-top: 0vh;
+  width: 550px;
+  height: 550px;
+  display: flex;
+}
