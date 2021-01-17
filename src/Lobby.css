@@ -81,21 +81,21 @@ font-weight: 900;
 font-size: 84px;
 font-family: 'Corbel', sans-serif;
 text-align: left;
-background-image: url(https://img.freepik.com/free-photo/_40163-61.jpg?size=626&ext=jpg);
+background-image: url(https://data.whicdn.com/images/209796267/original.jpg);
 background-clip: text;
 -webkit-background-clip: text;
 color: transparent;
 -webkit-text-fill-color: transparent;
-animation-duration: 60s;
+animation-duration: 20s;
 animation-iteration-count: infinite;
 animation-direction: alternate;
   animation-timing-function: linear;
 animation-name: fluid;
-background-size: 500%;
+background-size:500%;
 color: black;
 }
 #color2 #lobby-hologram{
-  background-size: 400%;
+  background-size: 300%;
   border-color: #52bbccbf;
 }
 #color3 #lobby-hologram{

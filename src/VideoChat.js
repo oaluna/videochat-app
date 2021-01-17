@@ -5,6 +5,7 @@ import Room from './Room';
 const VideoChat = () => {
   const [username, setUsername] = useState('');
   const [roomName, setRoomName] = useState('');
+  const [password, setPassword] = useState('');
   const [token, setToken] = useState(null);
 
   const handleUsernameChange = useCallback(event => {
@@ -15,6 +16,10 @@ const VideoChat = () => {
     setRoomName(event.target.value);
   }, []);
 
+  const handlePasswordChange = useCallback(event => {
+    setPassword(event.target.value);
+  }, []);
+
   const handleSubmit = useCallback(
     async event => {
       event.preventDefault();
@@ -22,7 +27,8 @@ const VideoChat = () => {
         method: 'POST',
         body: JSON.stringify({
           identity: username,
-          room: roomName
+          room: roomName,
+          password: password
         }),
         headers: {
           'Content-Type': 'application/json'
@@ -30,7 +36,7 @@ const VideoChat = () => {
       }).then(res => res.json());
       setToken(data.token);
     },
-    [roomName, username]
+    [roomName, username, password]
   );
 
   const handleLogout = useCallback(event => {
@@ -47,8 +53,10 @@ const VideoChat = () => {
       <Lobby
         username={username}
         roomName={roomName}
+        passWord={password}
         handleUsernameChange={handleUsernameChange}
         handleRoomNameChange={handleRoomNameChange}
+        handlePasswordChange={handlePasswordChange}
         handleSubmit={handleSubmit}
       />
     );

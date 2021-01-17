@@ -1,65 +1,30 @@
-
 .room {
   position: relative;
 }
-.logout-btn {
+.room button {
   position: absolute;
-  top: -1vh;
-  left: 85vw;
-  right: 20px;
-  width: 150px;
+  top: 0vh;
+  right: 28vw;
+  width: 100px;
   height: 40px;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
   border-radius: 25px;
-  background: #243748;
-  font-size: 16px;
-  color: #fff;
-  border: 1px solid transparent;
-}
-h2.room-header {
-  text-align: center;
-  font-weight: 300;
-  margin-top: 1vh;
-  margin-left: 50vw;
 }
 .room > h3 {
   text-align: center;
   font-weight: 300;
   margin-bottom: 1em;
 }
-
-
-.local-participant {
-  text-align: center;
-  margin-bottom: 2em;
-  margin-top: 0vh;
-  margin-left: 20vw;
-}
-.remote-participants {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  padding: 0 2em 2em;
-  margin-left: 20vw;
-}
-.participant {
-  height: 300px;
-  border-radius: 150px;
-  display: inline-block;
-
-}
-.participant:last-child {
-  margin-right: 0;
-}
-.participant h3 {
-  text-align: center;
-  padding-bottom: 0.5em;
-  color: #fff;
+.room-header {
+  margin-top: 5vh;
+  font-size: 36px;
+  font-weight: 500;
 }
 
-video {
-  width: 100%;
-  max-width: 600px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 6px;
+.local-participants-header {
+  position: absolute;
+ left: 0vw;
 }

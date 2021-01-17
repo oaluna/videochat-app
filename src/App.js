@@ -9,22 +9,16 @@ const App = () => {
       <div className="logo">
             {' '}
             <div id="hologram" className='color1'>
-              <h1>luna<br/>
-              {' '}web<br/>
-              {' '}dev<br/></h1>
+              <h1>oscar{' '}armando{' '}luna</h1>
             </div>
             <div id="hologram" className='color2'>
-              <h1>luna<br/>
-              web <br/>
-              dev <br/></h1>
+              <h1>oscar{' '}armando{' '}luna</h1>
             </div>
             <div id="hologram" className='color3'>
-              <h1>luna<br/>
-              web <br/>
-              dev <br/></h1>
+              <h1>oscar{' '}armando{' '}luna</h1>
             </div>
           </div >
-        <h3>Video-Chat Demo</h3>
+        <h2>Video-Chat Demo</h2>
       </header>
       <main>
         <VideoChat />

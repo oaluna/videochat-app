@@ -6,6 +6,8 @@ const Lobby = ({
   handleUsernameChange,
   roomName,
   handleRoomNameChange,
+  password,
+  handlePasswordChange,
   handleSubmit
 }) => {
   return (
@@ -35,6 +37,8 @@ const Lobby = ({
           onChange={handleUsernameChange}
           required
         />
+        <label className="form-label" htmlFor="password">Password:</label>
+        <input className="form-input" type="text" id="field" value={password} onChange={handlePasswordChange} required />
       </div>
 
       <div>
