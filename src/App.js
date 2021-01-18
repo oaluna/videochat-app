@@ -18,7 +18,7 @@ const App = () => {
               <h1>oscar{' '}armando{' '}luna</h1>
             </div>
           </div >
-        <h2>Video-Chat Demo</h2>
+        <h2>Video-Chat Demo II</h2>
       </header>
       <main>
         <VideoChat />
