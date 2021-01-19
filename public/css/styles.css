@@ -28,7 +28,10 @@ video {
 }
 
 .mainLeft {
+  position: absolute;
   flex: 0.8;
+  width: 0vw;
+  bottom: 0vh;
   display: flex;
   flex-direction: column;
 }
@@ -133,10 +136,12 @@ color: black;
   color: #fff;
   padding: 5px;
   justify-content: space-between;
+  margin-top: 0vh;
 }
 
 .mainControlsBlock {
   display: flex;
+  margin-top: 0vh;
 }
 
 .mainControlsButton {

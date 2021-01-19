@@ -1,6 +1,6 @@
 h1.lobby-header {
   position: absolute;
-  height: 40vh;
+  height: 35vh;
   width: 50vw;
   left: 10vw;
   top: 30vh;
@@ -50,8 +50,8 @@ display:block;
 opacity:0.3;
 z-index:-1;
 width:100%;
-height:100%;
-background: linear-gradient(90deg, rgba(255, 0, 0, 0.5) 14.29%, rgba(0, 0, 0, 0) 14.29%, rgba(0, 0, 0, 0) 50%, rgba(255, 0, 0, 0.5) 50%, rgba(255, 0, 0, 0.5) 64.29%, rgba(0, 0, 0, 0) 64.29%, rgba(0, 0, 0, 0) 100%);
+height:95%;
+
   background-size: 20px 20px;
 }
 #hologram {
@@ -81,18 +81,18 @@ font-weight: 900;
 font-size: 84px;
 font-family: 'Corbel', sans-serif;
 text-align: left;
-background-image: url(https://data.whicdn.com/images/209796267/original.jpg);
+background-image: url(https://images.unsplash.com/photo-1605033375841-e6be8a34917c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80https://blog.corp-site.envato.com/cdn-cgi/image/width=1200,quality=95,format=auto/uploads/2020/09/Holographic-Spotlight-2.jpg);
 background-clip: text;
 -webkit-background-clip: text;
 color: transparent;
 -webkit-text-fill-color: transparent;
-animation-duration: 20s;
+animation-duration: 40s;
 animation-iteration-count: infinite;
 animation-direction: alternate;
   animation-timing-function: linear;
 animation-name: fluid;
-background-size:500%;
-color: black;
+background-size: 500%;
+color:white;
 }
 #color2 #lobby-hologram{
   background-size: 300%;
