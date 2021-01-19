@@ -54,20 +54,33 @@ const Room = ({ roomName, token, handleLogout, audioRef, videoRef }) => {
     };
   }, [roomName, token]);
 
+
+
   const remoteParticipants = participants.map(participant => (
     <Participant key={participant.sid} participant={participant} height={100} />
   ));
 
   return (
-    <div className="room">
+    <div className="room" room={room}>
 
       <div className='mainLeft'>
         <div className='mainVideos'>
           <div id='videoGrid'>
-
-        </div>
+          <div className="local-participant">
+        {room ? (
+          <Participant
+            key={room.localParticipant.sid}
+            participant={room.localParticipant}
+          />
+        ) : (
+          ''
+        )}
+      </div>
       <h3 className="remote-participants-header">Remote Participants</h3>
       <div className="remote-participants">{remoteParticipants}</div>
+
+        </div>
+
 
         </div>
         <div className='mainControls'>

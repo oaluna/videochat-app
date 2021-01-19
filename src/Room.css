@@ -15,8 +15,7 @@
 }
 .room > h3 {
   text-align: center;
-  font-weight: 300;
-  margin-bottom: 1em;
+  font-weight: 500;
 }
 .room-header {
   margin-top: 5vh;
@@ -25,6 +24,15 @@
 }
 
 .local-participants-header {
-  position: absolute;
- left: 0vw;
+
+ margin-left: 0vw;
+ margin-top: 0vh;
+}
+
+h3.remote-participants-header {
+   position: absolute;
+   text-align: center;
+   top: 15vh;
+   left: 50vw;
+   font-size: 18px;
 }
